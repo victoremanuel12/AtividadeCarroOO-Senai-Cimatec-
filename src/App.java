@@ -11,10 +11,10 @@ public class App {
         int velocidade;
         aceleracao = Integer.parseInt(JOptionPane.showInputDialog("Informe quanto voce quer acelerar(saiba velocidade maxima do seu carro é:200):"));
         velocidade=  carro.acelerar(aceleracao);
-        System.out.println(" A cor do seu carro e: " + 
-        carro.cor + " o modelo do seu carro e: "+ 
-        carro.modelo + " sua aceleracao apos acelerar e: " + 
-        velocidade + " aseu carro esta na marcha: " +carro.pegarMarcha(velocidade));
+        JOptionPane.showMessageDialog(null,"A cor do seu carro é: " + 
+        carro.cor + "\n O modelo do seu carro é: "+ 
+        carro.modelo + "\n Sua aceleracao está em: " + 
+        velocidade + "km/h" + "\n Seu carro está na marcha: " +carro.pegarMarcha(velocidade));
 
     }
 }
