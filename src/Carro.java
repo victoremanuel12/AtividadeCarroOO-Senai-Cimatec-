@@ -2,7 +2,7 @@
 public class Carro {
    String cor;
    String modelo;
-   int velocidadeAtual = 0;
+   int velocidadeAtual;
    int velocidadeMaximaDoCarro ;
    boolean ligado;
 
@@ -11,8 +11,8 @@ public class Carro {
       return ligado;
    }
 
-   public int acelerar(int acelecao) {
-      velocidadeAtual += acelecao;
+   public int acelerar(int aceleracao) {
+      velocidadeAtual += aceleracao;
       if (velocidadeAtual > velocidadeMaximaDoCarro) {
          velocidadeAtual = velocidadeMaximaDoCarro;
       }
