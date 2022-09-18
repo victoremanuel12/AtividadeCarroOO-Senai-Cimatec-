@@ -4,17 +4,20 @@ public class Carro {
    String modelo;
    int velocidadeAtual;
    int velocidadeMaximaDoCarro ;
-   boolean ligado;
+   boolean ligado = false;
 
-   public boolean ligar() {
-      ligado = true;
-      return ligado;
+   void ligar() {
+      this.ligado = true;
+      
+   }
+   void desligar(){
+      this.ligado = false;
    }
 
    public int acelerar(int aceleracao) {
-      velocidadeAtual += aceleracao;
-      if (velocidadeAtual > velocidadeMaximaDoCarro) {
-         velocidadeAtual = velocidadeMaximaDoCarro;
+      this.velocidadeAtual += aceleracao;
+      if (this.velocidadeAtual > this.velocidadeMaximaDoCarro) {
+         this.velocidadeAtual = this.velocidadeMaximaDoCarro;
       }
       return velocidadeAtual;
    }
